@@ -22,13 +22,34 @@ button {
     line-height: 1;
 }
 
+.m_btn {
+    position: relative;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+}
+
 .bold {
     font-family: 'Nanum Myeongjo', serif;
+}
+
+.b {
+    font-weight: bold;
 }
 
 .inner {
     width: 1200px;
     margin: 0 auto;
+}
+
+@media(max-width:768px) {
+
+    .inner {
+        flex-direction: column;
+        width: auto;
+        padding: 0 15px;
+    }
 }
 
 .flex_inner {
@@ -40,6 +61,16 @@ button {
 
 .flex_inner>* {
     flex: 1;
+}
+
+@media(max-width:768px) {
+    .flex_inner {
+        flex-direction: column;
+        width: auto;
+        padding: 0 15px;
+    }
+
+
 }
 
 .mc {
@@ -59,6 +90,15 @@ button {
     margin: 0 auto;
     text-align: center;
 }
+
+
+@media(max-width:768px) {
+    .sec .tit {
+        width: auto;
+        padding: 0 15px;
+    }
+}
+
 
 .sec .tit h2 {
     font-size: 20px;
@@ -124,4 +164,19 @@ button {
 .mainYoutube .tit {
     width: auto;
     text-align: left;
+}
+
+.responsive_case {
+    position: relative;
+    background: tomato;
+    padding-bottom: calc(56.25% + 3px);
+}
+
+.responsive_case>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
 }

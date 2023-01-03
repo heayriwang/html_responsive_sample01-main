@@ -107,7 +107,20 @@ $(function () {
         $(this).parent().addClass('on');
     });
 
+    $('#f_link select').on('change', function () {
+        var lnk = $(this).val();
 
+        //value 값이 있으면 새창띄워..
+
+        if (lnk) {
+            window.open(lnk);
+        }
+
+        // lnk && window.open(lnk); 위공식이랑 같은말 좀더쉬운풀이, if문쓸수없을때 쓰는방법
+
+
+
+    })
 
 
 
