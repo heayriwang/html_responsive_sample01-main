@@ -63,7 +63,7 @@ $(function () {
 
 
     $("#bgndVideo").YTPlayer({
-        videoURL: 'qR13PjAwHwY',
+        videoURL: 'j6TUohZvcPg',
         containment: '.mainYoutubeBg',
         showControls: false,
         mute: true,
